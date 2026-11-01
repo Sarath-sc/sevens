@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sevens Aquatics - Live fish, aquarium moss and aquatic plants.">
+  <title>Sevens Aquatics | Water. Life. Care. Together.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">SEVENS<span>AQUATICS</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="tagline">WELCOME TO SEVENS AQUATICS</p>
+      <h1>Bring Your Aquarium<br>To <span>Life.</span></h1>
+      <p>Explore beautiful live fish, aquarium moss and aquatic plants.</p>
+      <a href="#categories" class="main-btn">Explore Collection ↗</a>
+    </div>
+  </section>
+
+  <section class="section" id="categories">
+    <p class="tagline">EXPLORE OUR COLLECTION</p>
+    <h2>Shop By Category</h2>
+
+    <div class="category-grid">
+      <a href="#products" class="category-card" onclick="selectCategory('Fish')">
+        <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?w=700" alt="Aquarium fish">
+        <h3>Live Fish</h3>
+      </a>
+
+      <a href="#products" class="category-card" onclick="selectCategory('Moss')">
+        <img src="https://images.unsplash.com/photo-1518467166778-b88f373ffec7?w=700" alt="Aquatic moss">
+        <h3>Aquarium Moss</h3>
+      </a>
+
+      <a href="#products" class="category-card" onclick="selectCategory('Plants')">
+        <img src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=700" alt="Aquatic plants">
+        <h3>Aquatic Plants</h3>
+      </a>
+    </div>
+  </section>
+
+  <section class="section products-section" id="products">
+    <p class="tagline">OUR COLLECTION</p>
+    <h2>Featured Products</h2>
+
+    <div class="filters">
+      <button class="filter active" onclick="filterProducts('All',this)">All</button>
+      <button class="filter" onclick="filterProducts('Fish',this)">Fish</button>
+      <button class="filter" onclick="filterProducts('Moss',this)">Moss</button>
+      <button class="filter" onclick="filterProducts('Plants',this)">Plants</button>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <section class="contact" id="contact">
+    <p class="tagline">LET'S CONNECT</p>
+    <h2>Looking for something special?</h2>
+    <p>Contact Sevens Aquatics for availability and orders.</p>
+    <a href="#" id="contactButton" class="main-btn">Chat on WhatsApp ↗</a>
+  </section>
+
+  <footer>
+    <h2>SEVENS AQUATICS</h2>
+    <p>WATER. LIFE. CARE. TOGETHER.</p>
+    <p>© 2026 Sevens Aquatics. All rights reserved.</p>
+    <p>Follow us on Instagram: @sevensaquatics</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
